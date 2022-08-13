@@ -1,0 +1,152 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页",
+				// #ifndef MP
+				"navigationStyle":"custom",
+				// #endif
+				"enablePullDownRefresh":false,
+				"app-plus": {
+				  "titleNView": true,
+				  "bounce": "none",
+				  "pullToRefresh": {
+				    "style": "circle",
+				    "offset": "70px"
+				  }
+				}
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":50,
+				// #ifndef MP
+				"navigationStyle":"custom",
+				// #endif
+				"app-plus": {
+				  "titleNView": false,
+				  "bounce": "none",
+				  "pullToRefresh": {
+				    "style": "circle",
+				    "offset": "70px"
+				  }
+				}
+				
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifndef MP
+				"navigationStyle":"custom",
+				// #endif
+				"enablePullDownRefresh":false,
+				"app-plus": {
+				  "titleNView": false,
+				  "bounce": "none",
+				  "pullToRefresh": {
+				    "style": "circle",
+				    "offset": "70px"
+				  }
+				}
+			}
+		}
+        ,{
+            "path" : "pages/lists/lists",
+            "style" : {
+                "navigationBarTitleText": "详情界面",
+                // #ifndef MP
+                "navigationStyle":"custom",
+                // #endif
+                "enablePullDownRefresh":false,
+                "app-plus": {
+                  "titleNView": false,
+                  "bounce": "none",
+                  "pullToRefresh": {
+                    "style": "circle",
+                    "offset": "70px"
+                  }
+                }
+            }
+            
+        }
+		,{
+		    "path" : "pages/play/play",
+		    "style" : {
+		        "navigationBarTitleText": "播放页面",
+				"enablePullDownRefresh":true,
+		        // #ifndef MP
+		        "navigationStyle":"custom",
+		        // #endif
+		        "app-plus": {
+		          "titleNView": false,
+		          "bounce": "none",
+		          "pullToRefresh": {
+		            "style": "circle",
+		            "offset": "70px"
+		          }
+		        }
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/inquire/inquire",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "结果页",
+				"enablePullDownRefresh":false,
+                // #ifndef MP
+                "navigationStyle":"custom",
+                // #endif
+                "app-plus": {
+                  "titleNView": false,
+                  "bounce": "none",
+                  "pullToRefresh": {
+                    "style": "circle",
+                    "offset": "70px"
+                  }
+                }
+            }
+            
+        }
+    ],
+	"tabBar":{
+		"color":"#808080",
+		"selectedColor":"383030",
+		"backgroundColor":"#F8F8F8",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"主页",
+				"iconPath":"static/icon/zhuye.png",
+				"selectedIconPath":"static/bindicon/zhuye.png"
+			},
+			{
+				"pagePath":"pages/search/search",
+				"text":"搜索",
+				"iconPath":"static/icon/sousuo.png",
+				"selectedIconPath":"static/bindicon/sousuo.png"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"text":"我的",
+				"iconPath":"static/icon/yiliaohangyedeICON-.png",
+				"selectedIconPath":"static/bindicon/yiliaohangyedeICON-.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "云影视",
+		"navigationBarBackgroundColor": "#f4ea2a",
+		"backgroundColor": "#C0C0C0",
+		"backgroundTextStyle":"dark",
+		"enablePullDownRefresh":true
+
+	}
+}
